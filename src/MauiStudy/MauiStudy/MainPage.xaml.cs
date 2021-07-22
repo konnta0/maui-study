@@ -10,11 +10,9 @@ namespace MauiStudy
 			InitializeComponent();
 		}
 
-		int count = 0;
-		private void OnCounterClicked(object sender, EventArgs e)
+		private async void OnContentPageSample(object sender, EventArgs e)
 		{
-			count++;
-			CounterLabel.Text = $"Current count: {count}";
+			await this.Navigation.PushAsync(new Pages.ContentPageSample() { Title = "ContentPageSample" });
 		}
 	}
 }
