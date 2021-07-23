@@ -10,10 +10,17 @@
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="CenterAndExpand" />
+
             <Button Text="ContentPageSample"
-                SemanticProperties.Hint="goto ContentPageSample"
+                SemanticProperties.Hint="Goto ContentPageSample"
                 Clicked="OnContentPageSample"
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="TabbedPageSample"
+                SemanticProperties.Hint="Goto TabbedPageSample"
+                Clicked="OnTabbedPageSample"
+                HorizontalOptions="CenterAndExpand" />
+
             <!-- <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,*">
             
 
