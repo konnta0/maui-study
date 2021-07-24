@@ -21,6 +21,10 @@
                 Clicked="OnTabbedPageSample"
                 HorizontalOptions="CenterAndExpand" />
 
+            <Button Text="ActivityIndicatorSample"
+                SemanticProperties.Hint="Goto ActivityIndicatorSample"
+                Clicked="OnActivityIndicatorSample"
+                HorizontalOptions="CenterAndExpand" />
             <!-- <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,*">
             
 
