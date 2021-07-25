@@ -25,6 +25,11 @@
                 SemanticProperties.Hint="Goto ActivityIndicatorSample"
                 Clicked="OnActivityIndicatorSample"
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="ButtonSample"
+                SemanticProperties.Hint="Goto ButtonSample"
+                Clicked="OnButtonSample"
+                HorizontalOptions="CenterAndExpand" />
             <!-- <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,*">
             
 

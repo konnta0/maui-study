@@ -21,5 +21,10 @@ namespace MauiStudy
         {
             await this.Navigation.PushAsync(new Pages.ActivityIndicatorSample());
         }
+
+        private async void OnButtonSample(object sender, EventArgs eventArgs)
+        {
+            await this.Navigation.PushAsync(new Pages.ButtonSample());
+        }
     }
 }
