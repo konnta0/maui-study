@@ -14,5 +14,15 @@ namespace MauiStudy.Pages
         {
             await DisplayAlert("Clicked!", "", "OK");
         }
+
+        private async void OnPressed(object sender, EventArgs e)
+        {
+            await DisplayAlert("Pressed!", "", "OK");
+        }
+
+        private async void OnReleased(object sender, EventArgs e)
+        {
+            await DisplayAlert("Released!", "", "OK");
+        }
     }
 }

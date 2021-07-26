@@ -1,4 +1,5 @@
-﻿using Microsoft.Maui;
+﻿using System.IO;
+using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using Microsoft.Maui.Controls.Compatibility;
 using Microsoft.Maui.Controls.Hosting;
@@ -17,6 +18,7 @@ namespace MauiStudy
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    fonts.AddFont("Dindalove.ttf", "Dindalove");
                 });
         }
     }

@@ -6,18 +6,69 @@
     <ContentPage.BindingContext>
         <model:ButtonSampleViewModel />
     </ContentPage.BindingContext>
-    <StackLayout>
-        <Button Text="Set Background Color"
-            BackgroundColor="Yellow"/>
-        <Button Text="CharacterSpacing"
-            CharacterSpacing="10"/>
-        <Button Text="Clicked"
-            Clicked="OnClicked"/>
-        <Button Text="Binding Command"
-            Command="{Binding OnCommandSample}"/>
-        <Label Text="{Binding RecievedOnCommandSampleCount, StringFormat='Value is now {0}'}"
-               FontSize="Large"
-               TextColor="Black"
-               BackgroundColor="Red"/>
-    </StackLayout>
+    <ScrollView>
+        <StackLayout>
+            <Button Text="Set Background Color and Text Color"
+                BackgroundColor="Yellow"
+                TextColor="Blue"/>
+
+            <!-- TODO BorderColor -->
+
+            <!-- TODO BorderWidth -->
+
+
+            <Button Text="CharacterSpacing"
+                CharacterSpacing="10"/>
+
+            <Button Text="Clicked Event"
+                Clicked="OnClicked"/>
+
+            <Button Text="Binding Command"
+                Command="{Binding OnCommandSample}"/>
+            <Label Text="{Binding RecievedOnCommandSampleCount, StringFormat='Value is now {0}'}"
+                FontSize="Large"
+                TextColor="Black"/>
+
+            <Button Text="Binding Command Parameter"
+                Command="{Binding OnCommandParameterSample}"
+                CommandParameter="{Binding RecievedOnCommandParameterSampleCount}"/>
+            <Label Text="{Binding RecievedOnCommandParameterSampleCount, StringFormat='Value is now {0}'}"
+                FontSize="Large"
+                TextColor="Black"/>
+
+
+            <!-- TODO ContentLayout -->
+
+            <!-- TODO CornerRadius -->
+
+            <Button Text="Font Attribute Italic"
+                FontAttributes="Italic"/>
+            <Button Text="Font Attribute Italic and Bold"
+                FontAttributes="Italic,Bold"/>
+
+            <Button Text="FontFamily Dindalove"
+                FontFamily="Dindalove"/>
+
+            <Button Text="Font size fixed 5"
+                FontSize="5" />
+
+            <Button Text="Font size Micro"
+                FontSize="Micro" />
+            <Button Text="Font size Large"
+                FontSize="Large" />
+            <Button Text="Font size Title"
+                FontSize="Title" />
+
+            <!-- TODO ImageSource -->
+
+            <Button Text="Padding (20,20,20,20)"
+                Padding="20,20,20,20" />
+
+            <Button Text="Pressed"
+                Pressed="OnPressed" />
+            <Button Text="Released"
+                Released="OnReleased" />
+
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
