@@ -26,5 +26,9 @@ namespace MauiStudy
         {
             await this.Navigation.PushAsync(new Pages.ButtonSample());
         }
+        private async void OnCheckBoxSample(object sender, EventArgs eventArgs)
+        {
+            await this.Navigation.PushAsync(new Pages.CheckBoxSample());
+        }
     }
 }
