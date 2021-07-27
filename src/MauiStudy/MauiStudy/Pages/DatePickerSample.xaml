@@ -1,0 +1,66 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiStudy.Pages.DatePickerSample"
+             BackgroundColor="White">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Background Color Red"
+                TextColor="Black" />
+            <DatePicker 
+                BackgroundColor="red"/>
+
+            <Label Text="CharacterSpacing 10"
+                TextColor="Black" />
+            <DatePicker 
+                CharacterSpacing="10"/>
+
+            <Label Text="Set Date 02/02/2021" 
+                TextColor="Black" />            
+            <DatePicker 
+                Date="02/02/2021"/>
+
+            <Label Text="DateSelected event"
+                TextColor="Black" />
+            <DatePicker 
+                x:Name="dateSelected"
+                DateSelected="OnDateSelected"/>
+
+            <Label Text="FontAttributes Italic and Bold"
+                TextColor="Black" />
+
+            <DatePicker 
+                FontAttributes="Italic,Bold"/>
+
+            <Label Text="FontFamily"
+                TextColor="Black" />
+            <DatePicker 
+                FontFamily="Dinadalove"/>             
+
+            <Label Text="FontSize"
+                TextColor="Black" />
+            <DatePicker 
+                FontSize="10"/>
+
+            <Label Text="Format(yyyy/MM/dd)"
+                TextColor="Black" />
+            <DatePicker 
+                Format="yyyy/MM/dd"/>
+
+            <Label Text="MaximumDate(02/02/2021)"
+                TextColor="Black" />
+            <DatePicker 
+                Format="02/02/2021"/>
+
+            <Label Text="MinimumDate(02/02/2021)"
+                TextColor="Black" />
+            <DatePicker 
+                Format="02/02/2021"/>
+
+            <Label Text="TextColor(Red)"
+                TextColor="Black" />
+            <DatePicker 
+                TextColor="Red"/>           
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

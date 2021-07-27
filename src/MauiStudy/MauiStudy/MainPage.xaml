@@ -34,6 +34,11 @@
                 SemanticProperties.Hint="Goto OnCheckBoxSample"
                 Clicked="OnCheckBoxSample"
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="DatePickerSample"
+                SemanticProperties.Hint="Goto DatePickerSample"
+                Clicked="OnDatePickerSample"
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ScrollView>
 </ContentPage>
