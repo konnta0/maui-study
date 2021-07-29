@@ -39,6 +39,12 @@
                 SemanticProperties.Hint="Goto DatePickerSample"
                 Clicked="OnDatePickerSample"
                 HorizontalOptions="CenterAndExpand" />
+
+
+            <Button Text="EditorSample"
+                SemanticProperties.Hint="Goto EditorSample"
+                Clicked="OnEditorSample"
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

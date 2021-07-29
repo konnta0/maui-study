@@ -22,19 +22,24 @@ namespace MauiStudy
             await this.Navigation.PushAsync(new Pages.ActivityIndicatorSample());
         }
 
-        private async void OnButtonSample(object sender, EventArgs eventArgs)
+        private async void OnButtonSample(object sender, EventArgs e)
         {
             await this.Navigation.PushAsync(new Pages.ButtonSample());
         }
 
-        private async void OnCheckBoxSample(object sender, EventArgs eventArgs)
+        private async void OnCheckBoxSample(object sender, EventArgs e)
         {
             await this.Navigation.PushAsync(new Pages.CheckBoxSample());
         }
 
-        private async void OnDatePickerSample(object sender, EventArgs eventArgs)
+        private async void OnDatePickerSample(object sender, EventArgs e)
         {
             await this.Navigation.PushAsync(new Pages.DatePickerSample());
+        }
+
+        private async void OnEditorSample(object sender, EventArgs e)
+        {
+            await this.Navigation.PushAsync(new Pages.EditorSample());
         }
     }
 }
