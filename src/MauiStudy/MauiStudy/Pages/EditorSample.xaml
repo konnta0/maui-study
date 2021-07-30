@@ -10,6 +10,27 @@
                 TextColor="Black" />
             <Editor 
                 Completed="OnCompleted" />
+
+            <Label Text="CharacterSpacing 10"
+                TextColor="Black" />
+            <Editor 
+                CharacterSpacing="10" />
+
+            <Label Text="FontAttributes Italic and Bold"
+                TextColor="Black" />
+            <Editor 
+                FontAttributes="Italic,Bold" />
+
+            <Label Text="FontFamily"
+                TextColor="Black" />
+            <Editor 
+                FontFamily="Dindalove" />
+
+            <Label Text="FontSize Large"
+                TextColor="Black" />
+            <Editor 
+                FontSize="Large" />
+
         </StackLayout>
     </ScrollView>
 </ContentPage>
