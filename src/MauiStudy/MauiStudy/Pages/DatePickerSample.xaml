@@ -34,7 +34,7 @@
             <Label Text="FontFamily"
                 TextColor="Black" />
             <DatePicker 
-                FontFamily="Dinadalove"/>             
+                FontFamily="Dindalove"/>             
 
             <Label Text="FontSize"
                 TextColor="Black" />
