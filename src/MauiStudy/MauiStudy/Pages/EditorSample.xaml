@@ -31,6 +31,16 @@
             <Editor 
                 FontSize="Large" />
 
+            <Label Text="IsReadOnly false"
+                TextColor="Black" />
+            <Editor 
+                Text="This is a read-only Editor"
+                IsReadOnly="false" />
+
+            <Label Text="IsTextPredictionEnabled false"
+                TextColor="Black" />
+            <Editor 
+                IsTextPredictionEnabled="false" />
         </StackLayout>
     </ScrollView>
 </ContentPage>
