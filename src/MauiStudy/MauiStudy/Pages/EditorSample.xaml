@@ -41,6 +41,34 @@
                 TextColor="Black" />
             <Editor 
                 IsTextPredictionEnabled="false" />
+
+            <Label Text="PlaceHolder"
+                TextColor="Black" />
+            <Editor 
+                Placeholder="123456" />
+
+            <Label Text="PlaceHolder Red"
+                TextColor="Black" />
+            <Editor 
+                PlaceholderColor="Red"
+                Placeholder="123456" />
+
+            <Label Text="Text"
+                TextColor="Black" />
+            <Editor 
+                Text="123456" />
+
+            <Label Text="TextColor Red"
+                TextColor="Black" />
+            <Editor 
+                Text="123456"
+                TextColor="Red" />
+
+            <Label Text="MaxLength 3"
+                TextColor="Black" />
+            <Editor 
+                MaxLength="3" />
+                
         </StackLayout>
     </ScrollView>
 </ContentPage>
