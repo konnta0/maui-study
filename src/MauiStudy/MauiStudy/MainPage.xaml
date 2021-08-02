@@ -45,6 +45,11 @@
                 SemanticProperties.Hint="Goto EditorSample"
                 Clicked="OnEditorSample"
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="EntrySample"
+                SemanticProperties.Hint="Goto EntrySample"
+                Clicked="OnEntrySample"
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

@@ -1,0 +1,45 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiStudy.Pages.EntrySample"
+             BackgroundColor="White">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="ClearButtonVisibility WhileEditing"
+                TextColor="Black" />
+            <Entry 
+                ClearButtonVisibility="WhileEditing" />
+
+            <Label Text="CharacterSpacing 10"
+                TextColor="Black" />
+            <Entry 
+                CharacterSpacing="10" />
+
+            <Label Text="Completed"
+                TextColor="Black" />
+            <Entry 
+                Completed="OnCompleted" />                
+                
+            <Label Text="CursorPosition 6"
+                TextColor="Black" />
+            <Entry
+                Text="Hello World!!"
+                CursorPosition="6" />  
+
+            <Label Text="FontAttributes Italic and Bold"
+                TextColor="Black" />
+            <Entry
+                FontAttributes="Italic,Bold" />                
+
+            <Label Text="FontFamily(Dindalove)"
+                TextColor="Black" />
+            <Entry
+                FontFamily="Dindalove" />
+
+            <Label Text="FontSize Large"
+                TextColor="Black" />
+            <Entry
+                FontSize="Large" />
+                
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -41,5 +41,10 @@ namespace MauiStudy
         {
             await this.Navigation.PushAsync(new Pages.EditorSample());
         }
+
+        private async void OnEntrySample(object sender, EventArgs e)
+        {
+            await this.Navigation.PushAsync(new Pages.EntrySample());
+        }
     }
 }
