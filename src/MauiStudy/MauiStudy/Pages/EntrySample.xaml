@@ -4,42 +4,42 @@
              BackgroundColor="White">
     <ScrollView>
         <StackLayout>
-            <Label Text="ClearButtonVisibility WhileEditing"
-                TextColor="Black" />
-            <Entry 
-                ClearButtonVisibility="WhileEditing" />
+            <Label Text="ClearButtonVisibility WhileEditing" TextColor="Black" />
+            <Entry ClearButtonVisibility="WhileEditing" />
 
-            <Label Text="CharacterSpacing 10"
-                TextColor="Black" />
-            <Entry 
-                CharacterSpacing="10" />
+            <Label Text="CharacterSpacing 10" TextColor="Black" />
+            <Entry CharacterSpacing="10" />
 
-            <Label Text="Completed"
-                TextColor="Black" />
-            <Entry 
-                Completed="OnCompleted" />                
-                
-            <Label Text="CursorPosition 6"
-                TextColor="Black" />
-            <Entry
-                Text="Hello World!!"
-                CursorPosition="6" />  
+            <Label Text="Completed" TextColor="Black" />
+            <Entry Completed="OnCompleted" />
 
-            <Label Text="FontAttributes Italic and Bold"
-                TextColor="Black" />
-            <Entry
-                FontAttributes="Italic,Bold" />                
+            <Label Text="CursorPosition 6" TextColor="Black" />
+            <Entry Text="Hello World!!" CursorPosition="6" />
 
-            <Label Text="FontFamily(Dindalove)"
-                TextColor="Black" />
-            <Entry
-                FontFamily="Dindalove" />
+            <Label Text="FontAttributes Italic and Bold" TextColor="Black" />
+            <Entry FontAttributes="Italic,Bold" />
 
-            <Label Text="FontSize Large"
-                TextColor="Black" />
-            <Entry
-                FontSize="Large" />
-                
+            <Label Text="FontFamily(Dindalove)" TextColor="Black" />
+            <Entry FontFamily="Dindalove" />
+
+            <Label Text="FontSize Large" TextColor="Black" />
+            <Entry FontSize="Large" />
+
+            <Label Text="HorizontalTextAlignment Center" TextColor="Black" />
+            <Entry HorizontalTextAlignment="Center" />
+
+            <Label Text="IsTextPredictionEnabled false" TextColor="Black" />
+            <Entry IsTextPredictionEnabled="false" />
+
+            <Label Text="IsPassword true" TextColor="Black" />
+            <Entry IsPassword="true" />
+
+            <Label Text="PlaceHolder" TextColor="Black" />
+            <Entry Placeholder="PlaceHolder text" />
+            
+            <!-- TODO PlaceHolderColor -->
+            <!-- TODO VerticalTextAlignment -->
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>
