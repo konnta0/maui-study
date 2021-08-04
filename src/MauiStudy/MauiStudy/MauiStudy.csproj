@@ -33,6 +33,33 @@
 		<MauiFont Include="Resources\Fonts\*" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Pages\ActivityIndicatorSample.cs">
+	    <DependentUpon>ActivityIndicatorSample.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\ButtonSample.cs">
+	    <DependentUpon>ButtonSample.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\CheckBoxSample.cs">
+	    <DependentUpon>CheckBoxSample.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\ContentPageSample.cs">
+	    <DependentUpon>ContentPageSample.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\DatePickerSample.cs">
+	    <DependentUpon>DatePickerSample.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\EditorSample.cs">
+	    <DependentUpon>EditorSample.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\EntrySample.cs">
+	    <DependentUpon>EntrySample.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\TabbedPageSample.cs">
+	    <DependentUpon>TabbedPageSample.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
 	<PropertyGroup>
 		<InvariantGlobalization Condition="$(TargetFramework.Contains('-maccatalyst'))">true</InvariantGlobalization>
 		<RuntimeIdentifier Condition="$(TargetFramework.Contains('-ios'))">iossimulator-x64</RuntimeIdentifier>
