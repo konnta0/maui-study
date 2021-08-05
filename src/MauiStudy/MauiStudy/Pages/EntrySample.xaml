@@ -1,7 +1,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiStudy.Pages.EntrySample"
+             xmlns:model="clr-namespace:MauiStudy.Models;assembly=MauiStudy"
              BackgroundColor="White">
+    <ContentPage.BindingContext>
+        <model:EntrySampleViewModel />
+    </ContentPage.BindingContext>
     <ScrollView>
         <StackLayout>
             <Label Text="ClearButtonVisibility WhileEditing" TextColor="Black" />
@@ -39,6 +43,9 @@
             
             <!-- TODO PlaceHolderColor -->
             <!-- TODO VerticalTextAlignment -->
+            <Label Text="ReturnCommand" TextColor="Black" />
+            <Label Text="{Binding RecievedReturnCommandStr}" TextColor="Black"/>
+            <Entry ReturnCommand="{Binding ReturnCommand}" />
             
         </StackLayout>
     </ScrollView>

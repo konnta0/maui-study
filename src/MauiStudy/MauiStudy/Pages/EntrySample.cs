@@ -13,7 +13,8 @@ namespace MauiStudy.Pages
 
         public async void OnCompleted(object sender, EventArgs e)
         {
-            await DisplayAlert("Completed!", "", "OK");
+            var text = ((Entry)sender).Text;
+            await DisplayAlert("Completed!", text, "OK");
         }
     }
 }
