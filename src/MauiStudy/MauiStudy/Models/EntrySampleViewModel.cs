@@ -8,8 +8,13 @@ namespace MauiStudy.Models
     public class EntrySampleViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+
         public ICommand ReturnCommand { private set; get; }
+
+        public ICommand ReturnCommandParameter { private set; get; }
+
         private string recievedReturnCommand;
+
         public string RecievedReturnCommandStr
         {
             set
@@ -22,6 +27,22 @@ namespace MauiStudy.Models
             }
             get => recievedReturnCommand;
         }
+
+        private string recievedReturnCommandParameter;
+        public string RecievedReturnCommandParameterStr
+        {
+            set
+            {
+                if (recievedReturnCommandParameter != value)
+                {
+                    recievedReturnCommandParameter = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("RecievedReturnCommandParameterStr"));
+                }
+            }
+            get => recievedReturnCommandParameter;
+        }
+
+
         public EntrySampleViewModel()
         {
             recievedReturnCommand = string.Empty;
@@ -30,6 +51,12 @@ namespace MauiStudy.Models
            {
                RecievedReturnCommandStr = $"recieved at {DateTime.Now.ToString()}";
            });
+
+            RecievedReturnCommandParameterStr = $"now at {DateTime.Now.ToString()}";
+            ReturnCommandParameter = new Command<DateTime>(t =>
+            {
+                RecievedReturnCommandParameterStr = $"recieved at {t.ToString()}";
+            });
         }
     }
 }
