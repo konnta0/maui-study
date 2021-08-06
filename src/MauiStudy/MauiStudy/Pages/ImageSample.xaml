@@ -1,0 +1,18 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiStudy.Pages.ImageSample"
+             BackgroundColor="White">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Aspect AspectFill" TextColor="Black" />
+            <Image Aspect="AspectFill" Source="sample.jpeg" />
+
+            <!-- <Label Text="Aspect AspectFit" TextColor="Black" />
+            <Image Aspect="AspectFit" Source="sample.jpeg"/>
+
+            <Label Text="Aspect Fill" TextColor="Black" />
+            <Image Aspect="Fill" Source="sample.jpeg"/> -->
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
