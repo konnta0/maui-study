@@ -5,13 +5,13 @@
     <ScrollView>
         <StackLayout>
             <Label Text="Aspect AspectFill" TextColor="Black" />
-            <Image Aspect="AspectFill" Source="sample.jpeg" />
+            <Image Aspect="AspectFill" Source="dotnet_bot.png" WidthRequest="50" HeightRequest="50" BackgroundColor="Blue" />
 
-            <!-- <Label Text="Aspect AspectFit" TextColor="Black" />
-            <Image Aspect="AspectFit" Source="sample.jpeg"/>
+            <Label Text="Aspect AspectFit" TextColor="Black" />
+            <Image Aspect="AspectFit" Source="dotnet_bot.png" WidthRequest="50" HeightRequest="50" BackgroundColor="Blue"/>
 
             <Label Text="Aspect Fill" TextColor="Black" />
-            <Image Aspect="Fill" Source="sample.jpeg"/> -->
+            <Image Aspect="Fill" Source="dotnet_bot.png" WidthRequest="50" HeightRequest="50" BackgroundColor="Blue"/>
 
         </StackLayout>
     </ScrollView>
