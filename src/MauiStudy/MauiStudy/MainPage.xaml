@@ -55,6 +55,11 @@
                 SemanticProperties.Hint="Goto ImageSample"
                 Clicked="OnImageSample"
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="LabelSample"
+                SemanticProperties.Hint="Goto LabelSample"
+                Clicked="OnLabelSample"
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

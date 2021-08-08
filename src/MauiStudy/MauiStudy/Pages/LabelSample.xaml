@@ -1,0 +1,40 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiStudy.Pages.LabelSample"
+             BackgroundColor="White">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="CharacterSpacing 10" TextColor="Black"/>
+            <Label Text="hellow world" CharacterSpacing="10" TextColor="Black"/>
+
+            <Label Text="FontAttributes Italic,Bold" TextColor="Black"/>
+            <Label Text="hellow world" FontAttributes="Italic,Bold" TextColor="Black"/>
+
+            <Label Text="FontFamily Dindalove" TextColor="Black"/>
+            <Label Text="hellow world" FontFamily="Dindalove" TextColor="Black"/>
+
+            <Label Text="FontSize Large" TextColor="Black"/>
+            <Label Text="hellow world" FontSize="Large" TextColor="Black"/>
+
+            <Label Text="FormattedText" TextColor="Black"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="hello" TextColor="Black"/>
+                        <Span Text="world" TextColor="Red"/> 
+                    </FormattedString>
+                </Label.FormattedText>	            
+            </Label>
+
+            <Label Text="HorizontalTextAlignment Center" TextColor="Black"/>
+            <Label Text="hellow world" HorizontalTextAlignment="Center" TextColor="Black"/>
+
+            <Label Text="LineBreakMode WordWrap" TextColor="Black"/>
+            <Label Text="hellow world" LineBreakMode="WordWrap" TextColor="Black"/>
+
+            <Label Text="LineHeight 10" TextColor="Black"/>
+            <Label Text="hellow world" LineHeight="10" TextColor="Black"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -51,5 +51,10 @@ namespace MauiStudy
         {
             await this.Navigation.PushAsync(new Pages.ImageSample());
         }
+
+        private async void OnLabelSample(object sender, EventArgs e)
+        {
+            await this.Navigation.PushAsync(new Pages.LabelSample());
+        }
     }
 }
