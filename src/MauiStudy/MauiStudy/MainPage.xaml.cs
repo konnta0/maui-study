@@ -56,5 +56,10 @@ namespace MauiStudy
         {
             await this.Navigation.PushAsync(new Pages.LabelSample());
         }
+
+        private async void OnProgressBarSample(object sender, EventArgs e)
+        {
+            await this.Navigation.PushAsync(new Pages.ProgressBarSample());
+        }
     }
 }

@@ -60,6 +60,11 @@
                 SemanticProperties.Hint="Goto LabelSample"
                 Clicked="OnLabelSample"
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="ProgressBarSample"
+                SemanticProperties.Hint="Goto ProgressBarSample"
+                Clicked="OnProgressBarSample"
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ScrollView>
 </ContentPage>
