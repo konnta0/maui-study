@@ -35,6 +35,17 @@
             <Label Text="LineHeight 10" TextColor="Black"/>
             <Label Text="hellow world" LineHeight="10" TextColor="Black"/>
 
+            <Label Text="MaxLines 2" TextColor="Black"/>
+            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis nulla eu felis fringilla vulputate. Nullam porta eleifend lacinia. Donec at iaculis tellus."
+                    LineBreakMode="WordWrap"
+                    MaxLines="2"
+                    TextColor="Black" />
+
+            <Label Text="TextDecorations Strikethrough" TextColor="Black"/>
+            <Label Text="hellow world" TextDecorations="Strikethrough" TextColor="Black"/>
+
+            <!-- TODO: TextType -->
+            <!-- TODO: VerticalTextAlignment-->
         </StackLayout>
     </ScrollView>
 </ContentPage>
