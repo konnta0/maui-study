@@ -67,5 +67,9 @@ namespace MauiStudy
             await this.Navigation.PushAsync(new Pages.RadioButtonSample());
         }
 
+        private async void OnSearchBarSample(object sender, EventArgs e)
+        {
+            await this.Navigation.PushAsync(new Pages.SearchBarSample());
+        }
     }
 }
