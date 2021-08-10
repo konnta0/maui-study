@@ -65,6 +65,11 @@
                 SemanticProperties.Hint="Goto ProgressBarSample"
                 Clicked="OnProgressBarSample"
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="RadioButtonSample"
+                SemanticProperties.Hint="Goto RadioButtonSample"
+                Clicked="OnRadioButtonSample"
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ScrollView>
 </ContentPage>
