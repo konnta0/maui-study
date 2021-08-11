@@ -5,7 +5,36 @@
     <ScrollView>
         <StackLayout>
             <Label Text="BackgroundColor Red" TextColor="Black"/>
-            <SearchBar BackgroundColor="Red" />
+            <SearchBar BackgroundColor="Red" TextColor="Black" />
+
+            <Label Text="CharacterSpacing 10" TextColor="Black"/>
+            <SearchBar CharacterSpacing="10" TextColor="Black" />
+            
+            <!-- TODO CancelButtonColor-->
+
+            <Label Text="FontAttributes Italic,Bold" TextColor="Black"/>
+            <SearchBar FontAttributes="Italic,Bold" TextColor="Black"/>
+
+            <Label Text="FontSize Large" TextColor="Black"/>
+            <SearchBar FontSize="Large" TextColor="Black"/>
+
+            <Label Text="HorizontalTextAlignment Center" TextColor="Black"/>
+            <SearchBar HorizontalTextAlignment="Center" TextColor="Black"/>      
+
+            <Label Text="MaxLength 2" TextColor="Black"/>
+            <SearchBar MaxLength="2" TextColor="Black"/>   
+        
+            <!-- TODO SearchCommand -->
+            <!-- TODO SearchCommandParameter -->
+
+            <Label Text="Text" TextColor="Black"/>
+            <SearchBar Text="hello world" TextColor="Black"/>
+
+            <Label Text="TextColor Red" TextColor="Black"/>
+            <SearchBar Text="hello world" TextColor="Red" />
+            
+            <!--TODO VerticalTextAlignment-->
+
         </StackLayout>
     </ScrollView>
 </ContentPage>
