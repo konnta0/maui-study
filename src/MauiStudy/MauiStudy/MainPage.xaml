@@ -75,6 +75,11 @@
                 SemanticProperties.Hint="Goto SearchBarSample"
                 Clicked="OnSearchBarSample"
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="ShapesSample"
+                SemanticProperties.Hint="Goto ShapesSample"
+                Clicked="OnShapesSample"
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

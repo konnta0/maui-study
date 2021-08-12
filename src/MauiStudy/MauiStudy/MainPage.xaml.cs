@@ -71,5 +71,10 @@ namespace MauiStudy
         {
             await this.Navigation.PushAsync(new Pages.SearchBarSample());
         }
+
+        private async void OnShapesSample(object sender, EventArgs e)
+        {
+            await this.Navigation.PushAsync(new Pages.ShapesSample());
+        }
     }
 }
