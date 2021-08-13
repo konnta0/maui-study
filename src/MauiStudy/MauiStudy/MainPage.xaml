@@ -80,6 +80,11 @@
                 SemanticProperties.Hint="Goto ShapesSample"
                 Clicked="OnShapesSample"
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="SliderSample"
+                SemanticProperties.Hint="Goto SliderSample"
+                Clicked="OnSliderSample"
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

@@ -1,0 +1,25 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiStudy.Pages.ShapesSample"
+             BackgroundColor="White">
+    <ScrollView>
+        <StackLayout>
+            <Slider Maximum="255"
+                    Minimum="10"
+                    Value="100"
+                    x:Name="MySlider"/>
+            <Label Text="{Binding 
+                Source={x:Reference MySlider},
+                Path=Value,
+                StringFormat='{0:N1}'}" TextColor="Black"/>
+
+            <Label Text="DragCompleted" TextColor="Black"/>
+            <Slider Maximum="10"
+                    Minimum="1"
+                    Value="5"
+                    DragCompleted="OnDragCompleted"
+                    />
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
