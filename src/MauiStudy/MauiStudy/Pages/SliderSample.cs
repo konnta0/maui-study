@@ -11,7 +11,7 @@ namespace MauiStudy.Pages
             InitializeComponent();
         }
 
-        public async OnDragCompleted(object sender, EventArgs e)
+        public async void OnDragCompleted(object sender, EventArgs e)
         {
             await DisplayAlert("DragCompleted", "", "OK");
         }
