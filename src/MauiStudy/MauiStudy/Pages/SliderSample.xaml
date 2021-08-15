@@ -1,7 +1,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiStudy.Pages.SliderSample"
+             xmlns:model="clr-namespace:MauiStudy.Models;assembly=MauiStudy"
              BackgroundColor="White">
+    <ContentPage.BindingContext>
+        <model:SliderSampleViewModel />
+    </ContentPage.BindingContext>
     <ScrollView>
         <StackLayout>
             <Slider Maximum="255"
@@ -18,6 +22,14 @@
                     Minimum="1"
                     Value="5"
                     DragCompleted="OnDragCompleted"
+                    />
+
+            <Label Text="DragCompletedCommand" TextColor="Black"/>
+            <Label Text="{Binding DragCompletedAt}" TextColor="Black"/>
+            <Slider Maximum="10"
+                    Minimum="1"
+                    Value="5"
+                    DragCompletedCommand="{Binding OnDragCompletedCommand}"
                     />
             
         </StackLayout>
