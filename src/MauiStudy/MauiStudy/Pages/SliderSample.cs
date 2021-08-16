@@ -1,5 +1,3 @@
-using System;
-using Microsoft.Maui;
 using Microsoft.Maui.Controls;
 
 namespace MauiStudy.Pages
@@ -14,6 +12,11 @@ namespace MauiStudy.Pages
         public async void OnDragCompleted(object sender, EventArgs e)
         {
             await DisplayAlert("DragCompleted", "", "OK");
+        }
+
+        public async void OnDragStarted(object sender, EventArgs e)
+        {
+            await DisplayAlert("DragStarted", "", "OK");
         }
     }
 }

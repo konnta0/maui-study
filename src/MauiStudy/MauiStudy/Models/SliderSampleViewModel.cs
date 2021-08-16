@@ -24,6 +24,20 @@ namespace MauiStudy.Models
         }
         private string _dragCompletedAt;
 
+        public ICommand OnDragStartedCommand { private set; get; }
+        public string DragStartedAt
+        {
+            set
+            {
+                if (_dragStartedAt != value)
+                {
+                    _dragStartedAt = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("DragStartedAt"));
+                }
+            }
+            get => _dragStartedAt;
+        }
+        private string _dragStartedAt;
 
         public SliderSampleViewModel()
         {
@@ -31,6 +45,12 @@ namespace MauiStudy.Models
             OnDragCompletedCommand = new Command(() =>
             {
                 DragCompletedAt = $"recieved at {DateTime.Now.ToString()}";
+            });
+
+            DragStartedAt = string.Empty;
+            OnDragStartedCommand = new Command(() =>
+            {
+                DragStartedAt = $"recieved at {DateTime.Now.ToString()}";
             });
         }
     }

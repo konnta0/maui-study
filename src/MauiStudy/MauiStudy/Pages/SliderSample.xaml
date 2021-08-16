@@ -31,6 +31,21 @@
                     Value="5"
                     DragCompletedCommand="{Binding OnDragCompletedCommand}"
                     />
+
+            <Label Text="DragStarted" TextColor="Black"/>
+            <Slider Maximum="10"
+                    Minimum="1"
+                    Value="5"
+                    DragStarted="OnDragStarted"
+                    />
+
+            <Label Text="DragStartedCommand" TextColor="Black"/>
+            <Label Text="{Binding DragStartedAt}" TextColor="Black"/>
+            <Slider Maximum="10"
+                    Minimum="1"
+                    Value="5"
+                    DragStartedCommand="{Binding OnDragStartedCommand}"
+                    />                    
             
         </StackLayout>
     </ScrollView>
