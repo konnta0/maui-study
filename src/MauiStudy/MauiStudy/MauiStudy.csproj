@@ -55,6 +55,27 @@
 	  <Compile Update="Pages\EntrySample.cs">
 	    <DependentUpon>EntrySample.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Pages\ImageSample.cs">
+	    <DependentUpon>ImageSample.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\LabelSample.cs">
+	    <DependentUpon>LabelSample.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\ProgressBarSample.cs">
+	    <DependentUpon>ProgressBarSample.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\RadioButtonSample.cs">
+	    <DependentUpon>RadioButtonSample.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\SearchBarSample.cs">
+	    <DependentUpon>SearchBarSample.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\ShapesSample.cs">
+	    <DependentUpon>ShapesSample.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\SliderSample.cs">
+	    <DependentUpon>SliderSample.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Pages\TabbedPageSample.cs">
 	    <DependentUpon>TabbedPageSample.xaml</DependentUpon>
 	  </Compile>
