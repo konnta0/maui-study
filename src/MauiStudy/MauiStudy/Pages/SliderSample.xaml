@@ -6,47 +6,49 @@
     <ContentPage.BindingContext>
         <model:SliderSampleViewModel />
     </ContentPage.BindingContext>
-    <ScrollView>
-        <StackLayout>
-            <Slider Maximum="255"
+    <ContentPage.Content>
+        <ScrollView>
+            <ScrollView.Content>
+                <StackLayout>
+                    <Slider Maximum="255"
                     Minimum="10"
                     Value="100"
                     x:Name="MySlider"/>
-            <Label Text="{Binding 
-                Source={x:Reference MySlider},
-                Path=Value,
-                StringFormat='{0:N1}'}" TextColor="Black"/>
+                    <Label Text="{Binding Source={x:Reference MySlider},
+                        Path=Value,
+                        StringFormat='{0:N1}'}" TextColor="Black"/>
 
-            <Label Text="DragCompleted" TextColor="Black"/>
-            <Slider Maximum="10"
-                    Minimum="1"
-                    Value="5"
-                    DragCompleted="OnDragCompleted"
-                    />
+                    <Label Text="DragCompleted" TextColor="Black"/>
+                    <Slider Maximum="10"
+                        Minimum="1"
+                        Value="5"
+                        DragCompleted="OnDragCompleted"
+                        />
 
-            <Label Text="DragCompletedCommand" TextColor="Black"/>
-            <Label Text="{Binding DragCompletedAt}" TextColor="Black"/>
-            <Slider Maximum="10"
-                    Minimum="1"
-                    Value="5"
-                    DragCompletedCommand="{Binding OnDragCompletedCommand}"
-                    />
+                    <Label Text="DragCompletedCommand" TextColor="Black"/>
+                    <Label Text="{Binding DragCompletedAt}" TextColor="Black"/>
+                    <Slider Maximum="10"
+                        Minimum="1"
+                        Value="5"
+                        DragCompletedCommand="{Binding OnDragCompletedCommand}"
+                        />
 
-            <Label Text="DragStarted" TextColor="Black"/>
-            <Slider Maximum="10"
-                    Minimum="1"
-                    Value="5"
-                    DragStarted="OnDragStarted"
-                    />
+                    <Label Text="DragStarted" TextColor="Black"/>
+                    <Slider Maximum="10"
+                        Minimum="1"
+                        Value="5"
+                        DragStarted="OnDragStarted"
+                        />
 
-            <Label Text="DragStartedCommand" TextColor="Black"/>
-            <Label Text="{Binding DragStartedAt}" TextColor="Black"/>
-            <Slider Maximum="10"
-                    Minimum="1"
-                    Value="5"
-                    DragStartedCommand="{Binding OnDragStartedCommand}"
-                    />                    
-            
-        </StackLayout>
-    </ScrollView>
+                    <Label Text="DragStartedCommand" TextColor="Black"/>
+                    <Label Text="{Binding DragStartedAt}" TextColor="Black"/>
+                    <Slider Maximum="10"
+                        Minimum="1"
+                        Value="5"
+                        DragStartedCommand="{Binding OnDragStartedCommand}"
+                        />
+                </StackLayout>
+            </ScrollView.Content>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

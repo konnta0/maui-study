@@ -2,38 +2,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiStudy.Pages.ShapesSample"
              BackgroundColor="White">
-    <ScrollView>
-        <StackLayout>
+    <ContentPage.Content>
+        <ScrollView>
+            <ScrollView.Content>
+                <StackLayout>
+                    <Ellipse Fill="DarkBlue"
+                        Stroke="Red"
+                        StrokeThickness="4"
+                        WidthRequest="150"
+                        HeightRequest="50"
+                        HorizontalOptions="Start" />
 
+                    <Rectangle Fill="DarkBlue"
+                        Stroke="Red"
+                        StrokeThickness="4"
+                        StrokeDashArray="1,1"
+                        StrokeDashOffset="6"
+                        WidthRequest="150"
+                        HeightRequest="50"
+                        HorizontalOptions="Start" />
 
-            <Ellipse Fill="DarkBlue"
-                Stroke="Red"
-                StrokeThickness="4"
-                WidthRequest="150"
-                HeightRequest="50"
-                HorizontalOptions="Start" />
+                    <Line X1="0"
+                        Y1="20"
+                        X2="300"
+                        Y2="20"
+                        StrokeLineCap="Round"
+                        Stroke="Red"
+                        StrokeThickness="12" />
 
-            <Rectangle Fill="DarkBlue"
-                Stroke="Red"
-                StrokeThickness="4"
-                StrokeDashArray="1,1"
-                StrokeDashOffset="6"
-                WidthRequest="150"
-                HeightRequest="50"
-                HorizontalOptions="Start" />
-
-            <Line X1="0"
-                Y1="20"
-                X2="300"
-                Y2="20"
-                StrokeLineCap="Round"
-                Stroke="Red"
-                StrokeThickness="12" />
-
-            <Polyline Points="20 20,250 50,20 120"
-                Stroke="DarkBlue"
-                StrokeThickness="20"
-                StrokeLineJoin="Round" />
-        </StackLayout>
-    </ScrollView>
+                    <Polyline Points="20 20,250 50,20 120"
+                        Stroke="DarkBlue"
+                        StrokeThickness="20"
+                        StrokeLineJoin="Round" />
+                </StackLayout>
+            </ScrollView.Content>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

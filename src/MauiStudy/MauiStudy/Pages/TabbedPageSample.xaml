@@ -2,9 +2,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiStudy.Pages.TabbedPageSample"
              xmlns:local="clr-namespace:MauiStudy.Pages.TabbedPageChildren;assembly=MauiStudy"    
-             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             BackgroundColor="White"
              Title="TabbedPageSample">
 
-    <local:Page1 />
-    <local:Page2 />
+    <TabbedPage.Children>
+        <local:Page1 />
+        <local:Page2 />
+    </TabbedPage.Children>
 </TabbedPage>
