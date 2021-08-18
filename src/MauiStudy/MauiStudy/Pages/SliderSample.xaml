@@ -47,6 +47,7 @@
                         Value="5"
                         DragStartedCommand="{Binding OnDragStartedCommand}"
                         />
+
                 </StackLayout>
             </ScrollView.Content>
         </ScrollView>

@@ -6,69 +6,57 @@
     <ContentPage.BindingContext>
         <model:ButtonSampleViewModel />
     </ContentPage.BindingContext>
-    <ScrollView>
-        <StackLayout>
-            <Button Text="Set Background Color and Text Color"
-                BackgroundColor="Yellow"
-                TextColor="Blue"/>
+    <ContentPage.Content>
+        <ScrollView>
+            <ScrollView.Content>
+                <StackLayout>
+                    <Button Text="Set Background Color and Text Color"
+                            BackgroundColor="Yellow"
+                            TextColor="Blue"/>
 
-            <!-- TODO BorderColor -->
+                    <!-- TODO BorderColor -->
 
-            <!-- TODO BorderWidth -->
-
-
-            <Button Text="CharacterSpacing"
-                CharacterSpacing="10"/>
-
-            <Button Text="Clicked Event"
-                Clicked="OnClicked"/>
-
-            <Button Text="Binding Command"
-                Command="{Binding OnCommandSample}"/>
-            <Label Text="{Binding RecievedOnCommandSampleCount, StringFormat='Value is now {0}'}"
-                FontSize="Large"
-                TextColor="Black"/>
-
-            <Button Text="Binding Command Parameter"
-                Command="{Binding OnCommandParameterSample}"
-                CommandParameter="{Binding RecievedOnCommandParameterSampleCount}"/>
-            <Label Text="{Binding RecievedOnCommandParameterSampleCount, StringFormat='Value is now {0}'}"
-                FontSize="Large"
-                TextColor="Black"/>
+                    <!-- TODO BorderWidth -->
 
 
-            <!-- TODO ContentLayout -->
+                    <Button Text="CharacterSpacing" CharacterSpacing="10"/>
 
-            <!-- TODO CornerRadius -->
+                    <Button Text="Clicked Event" Clicked="OnClicked"/>
 
-            <Button Text="Font Attribute Italic"
-                FontAttributes="Italic"/>
-            <Button Text="Font Attribute Italic and Bold"
-                FontAttributes="Italic,Bold"/>
+                    <Button Text="Binding Command" Command="{Binding OnCommandSample}"/>
+                    <Label Text="{Binding RecievedOnCommandSampleCount, StringFormat='Value is now {0}'}"
+                           FontSize="Large"
+                           TextColor="Black"/>
 
-            <Button Text="FontFamily Dindalove"
-                FontFamily="Dindalove"/>
+                    <Button Text="Binding Command Parameter"
+                            Command="{Binding OnCommandParameterSample}"
+                            CommandParameter="{Binding RecievedOnCommandParameterSampleCount}"/>
+                    <Label Text="{Binding RecievedOnCommandParameterSampleCount, StringFormat='Value is now {0}'}"
+                           FontSize="Large"
+                           TextColor="Black"/>
 
-            <Button Text="Font size fixed 5"
-                FontSize="5" />
 
-            <Button Text="Font size Micro"
-                FontSize="Micro" />
-            <Button Text="Font size Large"
-                FontSize="Large" />
-            <Button Text="Font size Title"
-                FontSize="Title" />
+                    <!-- TODO ContentLayout -->
 
-            <!-- TODO ImageSource -->
+                    <!-- TODO CornerRadius -->
 
-            <Button Text="Padding (20,20,20,20)"
-                Padding="20,20,20,20" />
+                    <Button Text="Font Attribute Italic" FontAttributes="Italic"/>
+                    <Button Text="Font Attribute Italic and Bold" FontAttributes="Italic,Bold"/>
+                    <Button Text="FontFamily Dindalove" FontFamily="Dindalove"/>
+                    <Button Text="Font size fixed 5" FontSize="5" />
 
-            <Button Text="Pressed"
-                Pressed="OnPressed" />
-            <Button Text="Released"
-                Released="OnReleased" />
+                    <Button Text="Font size Micro" FontSize="Micro" />
+                    <Button Text="Font size Large" FontSize="Large" />
+                    <Button Text="Font size Title" FontSize="Title" />
 
-        </StackLayout>
-    </ScrollView>
+                    <!-- TODO ImageSource -->
+
+                    <Button Text="Padding (20,20,20,20)" Padding="20,20,20,20" />
+
+                    <Button Text="Pressed" Pressed="OnPressed" />
+                    <Button Text="Released" Released="OnReleased" />
+                </StackLayout>
+            </ScrollView.Content>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

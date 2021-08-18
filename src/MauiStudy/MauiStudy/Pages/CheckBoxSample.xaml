@@ -2,14 +2,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiStudy.Pages.CheckBoxSample"
              BackgroundColor="White">
-    <ScrollView>
-        <StackLayout>
-            <CheckBox 
-                Color="Red" />
-            <CheckBox 
-                CheckedChanged="OnCheckBoxCheckedChanged" />
-            <CheckBox
-                IsChecked="true" />
-        </StackLayout>
-    </ScrollView>
+    <ContentPage.Content>
+        <ScrollView>
+            <ScrollView.Content>
+                <StackLayout>
+                    <CheckBox Color="Red" />
+                    <CheckBox CheckedChanged="OnCheckBoxCheckedChanged" />
+                    <CheckBox IsChecked="true" />
+                </StackLayout>
+            </ScrollView.Content>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>
