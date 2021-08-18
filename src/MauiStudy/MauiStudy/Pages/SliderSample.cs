@@ -19,5 +19,10 @@ namespace MauiStudy.Pages
         {
             await DisplayAlert("DragStarted", "", "OK");
         }
+
+        public async void OnValueChanged(object sender, EventArgs e)
+        {
+            await DisplayAlert("ValueChanged", "", "OK");
+        }
     }
 }

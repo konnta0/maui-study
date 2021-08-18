@@ -1,0 +1,16 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiStudy.Pages.StepperSample"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <ScrollView.Content>
+                <StackLayout>
+                    <Stepper Increment="2" Maximum="10" Minimum="0" />
+                    <Label TextColor="Black" Text="With ValueChanged Event"/>
+                    <Stepper Increment="2" Maximum="10" Minimum="0" ValueChanged="OnValueChanged"/>
+                </StackLayout>
+            </ScrollView.Content>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

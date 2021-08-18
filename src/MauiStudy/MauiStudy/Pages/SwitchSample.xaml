@@ -1,0 +1,14 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiStudy.Pages.SwitchSample"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <ScrollView.Content>
+                <StackLayout>
+                    <Switch IsToggled="True" OnColor="Red" ThumbColor="Blue"/>
+                </StackLayout>
+            </ScrollView.Content>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

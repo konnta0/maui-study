@@ -48,6 +48,14 @@
                         DragStartedCommand="{Binding OnDragStartedCommand}"
                         />
 
+                    <Label Text="TrackColor" TextColor="Black"/>
+                    <Slider MinimumTrackColor="Blue" MaximumTrackColor="Red" Maximum="10" Minimum="1" Value="5"/>
+
+                    <Label Text="ThumbColor" TextColor="Black"/>
+                    <Slider ThumbColor="Yellow"/>
+
+                    <Label Text="ValueChanged" TextColor="Black"/>
+                    <Slider ValueChanged="OnValueChanged"/>
                 </StackLayout>
             </ScrollView.Content>
         </ScrollView>
