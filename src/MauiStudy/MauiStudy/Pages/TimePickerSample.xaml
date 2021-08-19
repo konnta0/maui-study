@@ -1,0 +1,23 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiStudy.Pages.TimePickerSample"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <ScrollView.Content>
+                <StackLayout>
+                    <TimePicker
+                        BackgroundColor="Yellow"
+                        CharacterSpacing="10"
+                        FontAttributes="Bold,Italic"
+                        FontFamily="Dindalove"
+                        FontSize="Large"
+                        Format="hh--mm--ss"
+                        Time="4:15:26"
+                        TextColor="Red"
+                        />
+                </StackLayout>
+            </ScrollView.Content>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -85,6 +85,21 @@
                 SemanticProperties.Hint="Goto SliderSample"
                 Clicked="OnSliderSample"
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="StepperSample"
+                SemanticProperties.Hint="Goto StepperSample"
+                Clicked="OnStepperSample"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="SwitchSample"
+                SemanticProperties.Hint="Goto SwitchSample"
+                Clicked="OnSwitchSample"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="TimePickerSample"
+                SemanticProperties.Hint="Goto TimePickerSample"
+                Clicked="OnTimePickerSample"
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

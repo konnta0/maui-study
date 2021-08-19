@@ -87,12 +87,12 @@ namespace MauiStudy
             await Navigation.PushAsync(new Pages.StepperSample());
         }
 
-        private async void SwitchSample(object sender, EventArgs e)
+        private async void OnSwitchSample(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Pages.SwitchSample());
         }
 
-        private async void TimePickerSample(object sender, EventArgs e)
+        private async void OnTimePickerSample(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Pages.TimePickerSample());
         }
