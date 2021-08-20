@@ -74,6 +74,12 @@
 		<Compile Update="Pages\StepperSample.cs">
 			<DependentUpon>StepperSample.xaml</DependentUpon>
 		</Compile>
+		<Compile Update="Pages\SwitchSample.cs">
+			<DependentUpon>SwitchSample.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Pages\TimePickerSample.cs">
+			<DependentUpon>TimePickerSample.xaml</DependentUpon>
+		</Compile>
 	</ItemGroup>
 	<PropertyGroup>
 		<InvariantGlobalization Condition="$(TargetFramework.Contains('-maccatalyst'))">true</InvariantGlobalization>
